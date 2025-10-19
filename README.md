@@ -19,3 +19,23 @@ Tech Stack:
 - Matplotlib – Visualization of depth maps
 - OpenCV – Image preprocessing and color conversion
 - PIL – Image handling and resizing
+
+Installation:
+- pip install torch torchvision torchaudio timm opencv-python matplotlib open3d
+
+Usage:
+- Run "2D_to_3D.ipynb"'s code in a Python environment (or Google Colab)
+
+To download the generated 3D mesh when using Colab and view it:
+- Run: from google.colab import files, then files.download("mesh/output_mesh.obj")
+- To see the obj, you can use a website like https://3dviewer.net/
+  
+Output:
+- Predicted Depth Map – Visual representation of scene depth
+- Point Cloud (.ply) – Reconstructed spatial structure
+- Mesh (.obj) – 3D model ready for rendering or further processing
+
+Future Work:
+- Integrate multiple-view reconstruction for higher accuracy
+- Experiment with real-world datasets
+- Add interactive visualization in a web app using Three.js or Plotly
